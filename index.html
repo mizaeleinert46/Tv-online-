@@ -579,7 +579,35 @@ function gtag_report_conversion(url) {
                 lançamentos de filmes, séries exclusivas, todos os jogos de futebol, esportes internacionais e canais premium!
             </p>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UKjIoDctngA?si=xGTxP1TCtMZrosco&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <style>
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+<div class="responsive-video">
+  <iframe 
+    src="https://www.youtube.com/embed/UKjIoDctngA?si=xGTxP1TCtMZrosco&amp;controls=0"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 
             <!-- CTA Principal - Above the fold -->
             <div class="cta-container">
